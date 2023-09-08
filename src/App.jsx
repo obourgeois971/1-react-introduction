@@ -1,4 +1,6 @@
 import { Greetings } from "./Greetings";
+import { AgeCounter } from "./AgeCounter";
+import { Movies } from "./Movies";
 
 export function App() {
   return (
@@ -12,9 +14,16 @@ export function App() {
         doSomething={function () {
           console.log("Hello dans une fonction annonyme");
         }}
+        isSunny={false}
       >
         <img src="https://picsum.photos/200/300" />
       </Greetings>
+      <div>
+        <AgeCounter />
+      </div>
+      <div>
+        <Movies />
+      </div>
     </>
   );
 }
